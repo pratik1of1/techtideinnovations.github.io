@@ -1,246 +1,205 @@
 <!DOCTYPE html>
 <html lang="en">
-  <link rel="stylesheet" href="style.css">
-<p>
-    <center><img src="newbanner.jpg" alt="Logo" width="1200px" ></center>
-</p>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
 
 <body>
     <header>
         <nav>
+            <img src="finallogo.png" style="color: black" alt="">
             <ul>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#" class="active">About</a></li>
+                <li><a href="#portfolio-loc">Portfolio</a></li>
+                <li><a href="#contact-loc">Contact</a></li>
             </ul>
+            <div class="search">
+                <input type="text" placeholder="search">
+                <i class="ri-search-line"></i>
+            </div>
         </nav>
+        <div class="landing">
+            <div class="intro">
+                <h3><Span>Tech Tide Innovations</Span><br>Web Developer & Web<br>Services</h3>
+                <button>Contact Me</button>
+            </div>
+            <div class="socials">
+                <div class="line"></div>
+                <a href="https://github.com/dashboard"><i class="ri-github-fill"></i></a>
+                <a href="https://x.com/tech_tide_?t=juO3Aq4Ve14ZSpTLaDy_tQ&s=09"><i class="ri-twitter-fill"></i></a>
+                <a href="https://www.linkedin.com/in/techtideinnovations"><i class="ri-linkedin-fill"></i></a>
+                <a href="https://instagram.com/tech_tide_innovations?igshid=OGQ5ZDc2ODk2ZA==" ><i class="ri-instagram-fill"></i></a>
+                <a href="https://wa.me/qr/NG7ENDKZOP7WG1"><i class="ri-whatsapp-line"></i></a>
+            </div>
+        </div>
     </header>
-
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <style>
-        * {box-sizing: border-box;}
-        body {font-family: Verdana, sans-serif;}
-        .mySlides {display: none;}
-        img {vertical-align: middle;}
-        
-        /* Slideshow container */
-        .slideshow-container {
-          max-width: 1000px;
-          position: relative;
-          margin: auto;
-        }
-        
-        /* Caption text */
-        .text {
-          color: #f2f2f2;
-          font-size: 15px;
-          padding: 8px 12px;
-          position: absolute;
-          bottom: 8px;
-          width: 100%;
-          text-align: center;
-        }
-        
-        /* Number text (1/3 etc) */
-        .numbertext {
-          color: #f2f2f2;
-          font-size: 12px;
-          padding: 8px 12px;
-          position: absolute;
-          top: 0;
-        }
-        
-        /* The dots/bullets/indicators */
-        .dot {
-          height: 15px;
-          width: 15px;
-          margin: 0 2px;
-          background-color: #bbb;
-          border-radius: 50%;
-          display: inline-block;
-          transition: background-color 10s ease;
-        }
-        
-        .active {
-          background-color: #717171;
-        }
-        
-        /* Fading animation */
-        .fade {
-          animation-name: fade;
-          animation-duration: 1.5s;
-        }
-        
-        @keyframes fade {
-          from {opacity: .4} 
-          to {opacity: 1}
-        }
-        
-        /* On smaller screens, decrease text size */
-        @media only screen and (max-width: 300px) {
-          .text {font-size: 11px}
-        }
-        </style>
-        </head>
-        <body>
-        
-        <div class="slideshow-container">
-        
-        <div class="mySlides fade">
-          <div class="numbertext">1 / 3</div>
-          <img src="ourbanner1.png" style="width:100%">
+    <section class="about">
+        <h1>About</h1>
+        <div class="description">
+            <div class="line"></div>
+            <p>we are passionate about creating digital experiences that transform businesses and enhance online presence. With a dedicated team of experts, cutting-edge technologies, and a commitment to excellence, we have been delivering web services that drive results and fuel success for our clients.</p>
         </div>
-        
-        <div class="mySlides fade">
-          <div class="numbertext">2 / 3</div>
-          <img src="ourbanner2.png" style="width:100%">
-        </div>
-        
-        <div class="mySlides fade">
-          <div class="numbertext">3 / 3</div>
-          <img src="ourbanner3.png" style="width:100%">
-        </div>
-        
-        </div>
-        <br>
-        
-        <div style="text-align:center">
-          <span class="dot"></span> 
-          <span class="dot"></span> 
-          <span class="dot"></span> 
-        </div>
-        
-        <script>
-        let slideIndex = 0;
-        showSlides();
-        
-        function showSlides() {
-          let i;
-          let slides = document.getElementsByClassName("mySlides");
-          let dots = document.getElementsByClassName("dot");
-          for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";  
-          }
-          slideIndex++;
-          if (slideIndex > slides.length) {slideIndex = 1}    
-          for (i = 0; i < dots.length; i++) {
-            dots[i].className = dots[i].className.replace(" active", "");
-          }
-          slides[slideIndex-1].style.display = "block";  
-          dots[slideIndex-1].className += " active";
-          setTimeout(showSlides, 2000); // Change image every 2 seconds
-        }
-        </script>
-    
-    <section id="services">
+    </section>
+    <section class="skills">
         <h1>Our Services</h1>
-        <ul>
-            <li>
-                <div class="card">
-                <h2>Web Design</h2>
-                <p>Our team of designers creates visually stunning websites that capture your brand's essence.</p>
+        <div class="cards">
+            <div class="skill-card">
+                <img src="python.svg" alt="">
+                <h2>Python</h2>
             </div>
-            </li>
-    
-            <li>
-                <div class="card">  
-                <h2>Web Development</h2>
-                <p>We turn your vision into a functional, user-friendly website with the latest technologies.</p>
+            <!-- <div class="skill-card">
+                <img src="asset/amazon-web-services.svg" alt="">
+                <h2>AWS</h2> -->
+            <!-- </div> -->
+            <div class="skill-card">
+                <img src="css.svg" alt="">
+                <h2>CSS</h2>
             </div>
-            </li>
-            <li>
-                <div class="card"> 
-                <h2>SEO & Marketing</h2>
-                <p>We optimize your website for search engines and create marketing strategies.</p>
+            <!-- <div class="skill-card">
+                <img src="asset/django.svg" alt="">
+                <h2>Django</h2> -->
+            <!-- </div> -->
+            <!-- <div class="skill-card">
+                <img src="asset/flask.svg" alt="">
+                <h2>Flask</h2> -->
+            <!-- </div>
+            <div class="skill-card">
+                <img src="asset/flutter.svg" alt="">
+                <h2>Flutter</h2> -->
+            <!-- </div> -->
+            <div class="skill-card">
+                <img src="git.svg" alt="">
+                <h2>GIT</h2>
             </div>
-            </li>
-        </ul>
-    </section>
-    
-    <section id="portfolio">
-        <h1>PORTFOLIO</h1>
-        <div class="project">
-            <h1 style="text-align:center;">PROJECT 1</h1>
-            <h4 style="text-align:center;">Institute Site</h4>
-            <img src="project2a.png" style="width:40%" class="center">
-            <hr>
+            <div class="skill-card">
+                <img src="html.svg" alt="">
+                <h2>HTML</h2>
+            </div>
+            <div class="skill-card">
+                <img src="js.svg" alt="">
+                <h2>JavaScript</h2>
+            </div>
+            <div class="skill-card">
+                <img src="linux.jpg" alt="">
+                <h2>Linux</h2>
+            </div>
+            <!-- <div class="skill-card">
+                <img src="asset/mongodb.svg" alt="">
+                <h2>MongoDB</h2> -->
+            <!-- </div> -->
+            <!-- <div class="skill-card">
+                <img src="asset/mysql.svg" alt="">
+                <h2>MySQL</h2> -->
+            <!-- </div> -->
+            <div class="skill-card">
+                <img src="nodejs.svg" alt="">
+                <h2>NodeJS</h2>
+            </div>
+            <div class="skill-card">
+                <img src="react.svg" alt="">
+                <h2>ReactJS</h2>
+            </div>
         </div>
-        
-        <div class="project">
-            <h1 style="text-align:center;">PROJECT 2</h1>
-            <h4 style="text-align:center;">Resume Builder Website</h4>
-            <img src="resume.jpg" style="width:40%" class="center">
-            <hr> 
+    </section>
+    <section class="portfolio" id="portfolio-loc">
+        <h1>Portfolio</h1>
+        <div class="portfolio-cards">
+            <div class="portfolio-card">
+                <img src="protofilo1.jpg" alt="">
+                <div class="overlay">
+                    <h3>RESUME DEVELOPER</h3>
+                    <p>Generate your official logo with us .</p>
+                    <button>link-></button>
+                </div>
+            </div>
+            <div class="portfolio-card">
+                <img src="protofilo2.jpg" alt="">
+                <div class="overlay">
+                    <h3>Oraganization</h3>
+                    <p>Visit our project= organization website </p>
+                    <button>link-></button>
+                </div>
+            </div>
+            <div class="portfolio-card">
+                <img src="protofilo3.jpg" alt="">
+                <div class="overlay">
+                    <h3>Trekking website</h3>
+                    <p>Visit our project .</p>
+                    <button>link-></button>
+                </div>
+            </div>
+            <div class="portfolio-card">
+                <img src="protofilo4.jpg" alt="">
+                <div class="overlay">
+                    <h3>Twitter Scrapper</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, laudantium!</p>
+                    <button>See More -></button>
+                </div>
+            </div>
+            <div class="portfolio-card">
+                <img src="protofilo5.jpg" alt="">
+                <div class="overlay">
+                    <h3>LinkedIn Scrapper</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, laudantium!</p>
+                    <button>See More -></button>
+                </div>
+            </div>
+            <div class="portfolio-card">
+                <img src="protofilo6.jpg" alt="">
+                <div class="overlay">
+                    <h3>YouTube Scrapper</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, laudantium!</p>
+                    <button>See More -></button>
+                </div>
+            </div>
         </div>
-
-        <div class="project">
-          <h1 style="text-align:center;">PROJECT 3</h1>
-          <h4 style="text-align:center;">Trekking Site</h4>
-          <img src="treking.jpg" style="width:40%" class="center">
-          <hr>
-      </div>
-        <!-- Add more project items as needed -->
+        <Button>View More</Button>
     </section>
-
-    <section id="about">
-        <h1>About Us</h1>
-        <p>we are passionate about creating digital experiences that transform businesses and enhance online presence. With a dedicated team of experts, cutting-edge technologies, and a commitment to excellence, we have been delivering web services that drive results and fuel success for our clients.</p>
+    <section class="experience">
+        <div class="darker-div"></div>
+        <h1>  Our Speciallity </h1>
+        <div class="lighter-div">
+            <div class="exp">
+                <h2>Web Developing</h2>
+                <div class="exp-desc">
+                     <!-- <h3>Scottech, Toledo</h3>  -->
+                    <p>At [Tech Tide Innovations], our mission is to provide innovative and tailored web solutions that help our clients thrive in the ever-evolving digital landscape. We understand that the online world is constantly changing, and we're committed to keeping you ahead of the curve. Whether you're a small startup or a large enterprise, we're here to transform your ideas into user-friendly and cutting-edge web experiences</p>
+                </div>
+            </div>
+              <!-- <div class="exp">
+                <h2>Senior Python Developer</h2>
+                <div class="exp-desc">
+                    <h3>Scottech, Toledo</h3>
+                    <p></p>
+               </div>
+            </div>
+        </div>  -->
     </section>
-    
-    <section id="contact">
-        <h1>Contact Us</h1>
-        Email :<a href="mailto:techtideinnovations6@gmail.com">techtideinnovations6@gmail.com</a>.<br> 
-        <!-- <p>Email: techtideinnovations6@gmail.com</p> -->
+    <section class="contact-us " id="contact-loc">
+        <h1>Contact Me</h1>
+        <div class="contact">
+            <div class="contact-card">
+                <i class="ri-message-3-line"></i>
+                <!-- <p>pratikgoriwale71@gmail.com</p> -->
+                Email :<a href="mailto:techtideinnovations6@gmail.com">techtideinnovations6@gmail.com</a>.<br> 
+            </div>
+            <div class="contact-card">
+                <i class="ri-phone-line"></i>
         <p>Mobile No:<a href="tel:+91 7249407268">+91 7249407268</a></p>
-        <!-- <p>Phone: +91 7249407268</p> -->
-        <p>Address: Pimpri Chinchwad, Pune</p>
-
-        <!-- social media handle -->
-        <head>
-          <meta name="viewport" content="width=device-width, initial-scale=1">
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-          <style>
-          .fa {
-            padding: 20px;
-            padding-right: 45px;
-            font-size: 30px;
-            width: 50px;
-            text-align: left;
-            text-decoration: none;
-            margin: 5px 2px;
-          }
-          .fa-twitter {
-            background: #55ACEE;
-            color: white;
-          }
-          
-          .fa-linkedin {
-            background: #007bb5;
-            color: white;
-          }
-          
-          .fa-instagram {
-            background: #125688;
-            color: white;
-          }
-          
-          </style>
-          </head>
-          <body>
-          
-          
-          <!-- Add font awesome icons -->
-          <a href="https://x.com/tech_tide_?t=juO3Aq4Ve14ZSpTLaDy_tQ&s=09" class="fa fa-twitter"></a>
-          <a href="https://www.linkedin.com/in/techtideinnovations" class="fa fa-linkedin"></a>
-          <a href="https://instagram.com/tech_tide_innovations?igshid=OGQ5ZDc2ODk2ZA==" class="fa fa-instagram"></a>
-          
-                
-          </body>
-          
+        
+            </div>
+            <div class="contact-card">
+                <i class="ri-map-pin-3-line"></i>
+                <p>Pimpri Chinchwad, India</p>
+            </div>
+        </div>
     </section>
-  
- 
+    <script src="script.js"></script>
 </body>
+
 </html>
